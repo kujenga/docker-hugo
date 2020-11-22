@@ -1,7 +1,7 @@
 # Builder image
-FROM golang:1.13-buster AS builder
+FROM golang:1.15-buster AS builder
 
-ENV HUGO_VERSION v0.58.0
+ENV HUGO_VERSION v0.78.2
 
 ENV GO111MODULE=on
 RUN go get -v "github.com/gohugoio/hugo@$HUGO_VERSION"
